@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather App</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="favicon.png">
+    </head>
+    <body>
+        <main>
+            <form class="weather-form">
+                <input type="search" name="city" placeholder="Enter a city..." autofocus autocomplete="off">
+                <button type="submit"><i aria-hidden="true" class="icon-search"></i></button>
+            </form>
+            <section class="weather-data">
+                <h1 class="city"></h1>
+                <div class="main-temp">
+                    <h1 class="temp"></h1>
+                    <div class="temp-units">
+                        <input type="radio" name="unit" value="f" id="unit-f">
+                        <label for="unit-f" class="unit" data-unit="f">°F</label>
+                        <input type="radio" name="unit" value="c" id="unit-c">
+                        <label for="unit-c" class="unit" data-unit="c">°C</label>
+                        <input type="radio" name="unit" value="k" id="unit-k">
+                        <label for="unit-k" class="unit active" data-unit="k">K</label>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3 class="description-text"></h3>
+                    <img src="javascript:void(0)" alt="Weather Condition" class="condition-img">
+                </div>
+                <div class="env-conditions">
+                    <div class="group">
+                        <i aria-hidden="true" class="icon-wind"></i>
+                        <p class="wind-speed"></p>
+                    </div>
+                    <div class="group">
+                        <i aria-hidden="true" class="icon-humidity"></i>
+                        <p class="humidity"></p>
+                    </div>
+                    <div class="group">
+                        <i aria-hidden="true" class="icon-pressure"></i>
+                        <p class="pressure"></p>
+                    </div>
+                </div>
+                <div class="sun">
+                    <div class="group">
+                        <i aria-hidden="true" class="icon-sunrise"></i>
+                        <p class="sunrise"></p>
+                    </div>
+                    <div class="group">
+                        <i aria-hidden="true" class="icon-sunset"></i>
+                        <p class="sunset"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
